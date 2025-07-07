@@ -1738,6 +1738,7 @@ public final class ApplicationConstants {
     public static final String DATA_INICIO_ATIVIDADE = "data_inicio_atividade";
     public static final String DATA_FIM_ATIVIDADE = "data_fim_atividade";
     public static final String ASSINATURA_EMPREGADO = "assinatura_empregado";
+    public static final String IDENTITY = "id";
     public static final String ID_MODELO_VEICULO = "id_modelo_veiculo";
     public static final String ID_MOTIVO_CANCELAMENTO = "id_motivo_cancelamento";
     public static final String ID_MOTIVO_IMPRODUTIVIDADE = "id_motivo_improdutividade";
@@ -1967,8 +1968,8 @@ public final class ApplicationConstants {
     public static final String LOCALIZACAO = "localizacao";
     public static final String LOCATION = "Location";
     public static final String LOCK_LOGIN = "lock_login";
-    public static final String LOG_FINALLY_USER = "Finally User: [{}]";
     public static final String LOG_JORNADA_FUNCIONARIO = "Jornada: [%s] - Motorista: [%s]";
+    public static final String LOG_FINALLY_USER = "Finally User: [{}]";
     public static final String LOG_JORNADA_PLACA_FUNCIONARIO = "Jornada: [%s] - Placa [%s] - Motorista: [%s]";
     public static final String LOG_JORNADA_PONTO_FUNCIONARIO = "Jornada: [%s] - Ponto [%s] - Motorista: [%s]";
     public static final String LOG_JORNADA_PONTO_MENSAGEM_FUNCIONARIO = "Jornada: [%s] - Ponto Mensagem [%s] - Motorista: [%s]";
@@ -2320,6 +2321,7 @@ public final class ApplicationConstants {
     public static final String PATH_IN_CONTRATOS = "/inContratos";
     public static final String PATH_INDEX_HTML = "/index.html";
     public static final String PATH_INFO = "/info/**";
+    public static final String PATH_ID = "/{id}";
     public static final String PATH_INFORMACAO_AGENTE = "/informacaoAgente";
     public static final String PATH_INFORMACAO_JORNADA = "/informacaoJornada";
     public static final String PATH_INICIADA = "/iniciada";
@@ -2390,6 +2392,7 @@ public final class ApplicationConstants {
     public static final String PATH_PARAMETRO_SISTEMA = "/parametroSistema";
     public static final String PATH_PDF = "/pdf";
     public static final String PATH_PENDENTE = "/pendente";
+    public static final String PATH_PERSON = "/person";
     public static final String PATH_PERFIL_RELATORIO = "/perfilRelatorio";
     public static final String PATH_PERMISSAO = "/permissao";
     public static final String PATH_PLACA = "/placa";
