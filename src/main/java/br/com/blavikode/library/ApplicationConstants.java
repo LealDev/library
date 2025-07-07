@@ -254,7 +254,7 @@ public final class ApplicationConstants {
     public static final String BENEFICIO = "beneficio";
     public static final String BLOB_ARQUIVO = "blobArquivo";
     public static final String BRANCO_C = "branco_c";
-    public static final String BR_COM_BLAVIKODE_LIBRARY = "br.com.blavikode.library";
+    public static final String BR_COM_BLAVIKODE_LIBRARY_REPOSITORIES = "src/main/java/br/com/blavikode/library/repositories";
     public static final String CA = "ca";
     public static final String CACHE_ABASTECIMENTO = "tipoAbastecimento";
     public static final String CACHE_AGENDA_ACOMPANHAMENTO = "agendaAcompanhamento";
