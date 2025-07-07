@@ -1,29 +1,25 @@
 package br.com.blavikode.library.model;
 
-import java.io.Serial;
-import java.io.Serializable;
-import java.util.Objects;
+import br.com.blavikode.library.type.AbstractAtivoType;
+import jakarta.persistence.*;
 
-public class Person implements Serializable {
+import static br.com.blavikode.library.ApplicationConstants.*;
 
-    @Serial
-    private static final long serialVersionUID = 1L;
 
-    private Long id;
+@Entity
+@Table(name = PERSON)
+public class Person extends AbstractAtivoType {
+
+    @Column(name = FIRST_NAME, nullable = false, length = 80)
     private String firstName;
+    @Column(name = LAST_NAME, nullable = false, length = 80)
     private String lastName;
+    @Column(nullable = false, length = 100)
     private String address;
+    @Column(nullable = false, length = 100)
     private String gender;
 
     public Person() {
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getFirstName() {
@@ -56,18 +52,6 @@ public class Person implements Serializable {
 
     public void setGender(String gender) {
         this.gender = gender;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (o == null || getClass() != o.getClass()) return false;
-        Person person = (Person) o;
-        return Objects.equals(id, person.id) && Objects.equals(firstName, person.firstName) && Objects.equals(lastName, person.lastName) && Objects.equals(address, person.address) && Objects.equals(gender, person.gender);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, firstName, lastName, address, gender);
     }
 
 }
