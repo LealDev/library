@@ -1,5 +1,6 @@
 package br.com.blavikode.library.controllers.person;
 
+import br.com.blavikode.library.exception.LibraryRuntimeException;
 import br.com.blavikode.library.model.Person;
 import br.com.blavikode.library.services.person.IPersonService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +14,7 @@ import static br.com.blavikode.library.ApplicationConstants.*;
 
 
 @RestController
-@RequestMapping(PERSON)
+@RequestMapping(PATH_PERSON)
 public class PersonController {
 
     @Autowired
@@ -21,7 +22,7 @@ public class PersonController {
 
     @GetMapping(value = PATH_ID, produces = MediaType.APPLICATION_JSON_VALUE)
     @RequestMapping(value = PATH_ID, method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public Person findById(@PathVariable("id") long id){
+    public Person findById(@PathVariable(PROP_ID) long id){
         try {
             return PersonService.findById(id);
         } catch (final Exception e) {
@@ -43,7 +44,7 @@ public class PersonController {
        try {
            return PersonService.findAll();
        } catch (RuntimeException e) {
-           throw new RuntimeException(e);
+           throw new LibraryRuntimeException(ERRO_DE_COMUNICACAO_POR_FAVOR_ATUALIZE_SUA_TELA, e);
        }
     }
 
