@@ -10,7 +10,9 @@ import static org.apache.commons.lang3.ObjectUtils.allNotNull;
 
 @MappedSuperclass
 public class AbstractAtivoType extends AbstractType{
-private boolean ativo;
+    private static final long serialVersionUID = 1L;
+
+    private boolean ativo;
     @NotNull(message = ATIVO_ESTA_NULO)
     @Column(name = PROP_ATIVO)
     public Boolean getAtivo() {
