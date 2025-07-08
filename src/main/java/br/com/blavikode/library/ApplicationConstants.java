@@ -2,7 +2,7 @@ package br.com.blavikode.library;
 
 public final class ApplicationConstants {
     public static final String ATIVO_ESTA_NULO = "[Ativo] está nulo";
-    public static final String BR_COM_BLAVIKODE_LIBRARY_REPOSITORIES = "src/main/java/br/com/blavikode/library/repositories";
+    public static final String BR_COM_BLAVIKODE_LIBRARY = "br.com.blavikode.library";
     public static final String CLASSPATH_DEFAULT_PROPERTIES = "classpath:application.properties";
     public static final String ERRO_DE_COMUNICACAO_POR_FAVOR_ATUALIZE_SUA_TELA = "Erro de comunicação, por favor atualize sua tela e tente novamente.";
     public static final String FIRST_NAME = "first_name";

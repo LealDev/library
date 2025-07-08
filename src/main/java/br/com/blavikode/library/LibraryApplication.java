@@ -9,8 +9,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 import static br.com.blavikode.library.ApplicationConstants.*;
 
-@EnableJpaRepositories(basePackages = BR_COM_BLAVIKODE_LIBRARY_REPOSITORIES)
-@ComponentScan(BR_COM_BLAVIKODE_LIBRARY_REPOSITORIES)
+@EnableJpaRepositories(basePackages = BR_COM_BLAVIKODE_LIBRARY)
+@ComponentScan(BR_COM_BLAVIKODE_LIBRARY)
 @PropertySource(CLASSPATH_DEFAULT_PROPERTIES)
 @EnableAutoConfiguration
 @SpringBootApplication
