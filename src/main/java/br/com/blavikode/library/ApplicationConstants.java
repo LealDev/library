@@ -5,6 +5,8 @@ public final class ApplicationConstants {
     public static final String BR_COM_BLAVIKODE_LIBRARY = "br.com.blavikode.library";
     public static final String CLASSPATH_DEFAULT_PROPERTIES = "classpath:application.properties";
     public static final String ERRO_DE_COMUNICACAO_POR_FAVOR_ATUALIZE_SUA_TELA = "Erro de comunicação, por favor atualize sua tela e tente novamente.";
+    public static final String EXCEPTION_PERSON_NOT_FOUND= "Pessoa com ID %s não encontrada.";
+    public static final String EXCEPTION_NULL_ID= "ID da pessoa não pode ser nulo para atualização.";
     public static final String FIRST_NAME = "first_name";
     public static final String LAST_NAME = "last_name";
     public static final String MESSAGING_SCOPE = "https://www.googleapis.com/auth/firebase.messaging";
