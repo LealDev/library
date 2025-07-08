@@ -21,7 +21,6 @@ public class PersonController {
     private IPersonService PersonService;
 
     @GetMapping(value = PATH_ID, produces = MediaType.APPLICATION_JSON_VALUE)
-    @RequestMapping(value = PATH_ID, method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public Person findById(@PathVariable(PROP_ID) long id){
         try {
             return PersonService.findById(id);
@@ -47,7 +46,4 @@ public class PersonController {
            throw new LibraryRuntimeException(ERRO_DE_COMUNICACAO_POR_FAVOR_ATUALIZE_SUA_TELA, e);
        }
     }
-
-
-
 }
