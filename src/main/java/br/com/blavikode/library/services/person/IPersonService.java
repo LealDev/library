@@ -10,4 +10,8 @@ public interface IPersonService {
     Person findById(long id);
 
     Person create(Person person);
+
+    Person update(Person person);
+
+    void delete(Long id);
 }

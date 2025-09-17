@@ -26,7 +26,7 @@ import br.com.blavikode.library.geral.ICallback;
 public abstract class AbstractType implements Serializable, ICallback {
     private static final long serialVersionUID = 2743591570784179362L;
     private Timestamp criacao;
-    private long id;
+    private Long id;
     private Timestamp modificacao;
     private Integer versao;
 
@@ -68,11 +68,11 @@ public abstract class AbstractType implements Serializable, ICallback {
     @Id
     @GeneratedValue(strategy = IDENTITY)
     @Column(name = PROP_ID, unique = true, nullable = false)
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(final long id) {
+    public void setId(final Long id) {
         this.id = id;
     }
 
